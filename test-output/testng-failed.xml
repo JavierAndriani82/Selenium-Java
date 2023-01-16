@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Edit.SauceDemo.Asignacion5">
+      <class name="Edit.SauceDemo.Asignacion6">
         <methods>
-          <include name="abrirNavegador"/>
           <include name="logearse"/>
-          <include name="comprar"/>
-          <include name="cerrarNavegador"/>
+          <include name="cerraNavegador"/>
+          <include name="abrirNavegador"/>
         </methods>
-      </class> <!-- Edit.SauceDemo.Asignacion5 -->
+      </class> <!-- Edit.SauceDemo.Asignacion6 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
