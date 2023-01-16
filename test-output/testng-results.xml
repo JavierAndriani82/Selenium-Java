@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-16T16:50:38 ART" name="Default suite" finished-at="2023-01-16T16:50:38 ART" duration-ms="29">
+  <suite started-at="2023-01-16T17:30:39 ART" name="Default suite" finished-at="2023-01-16T17:30:40 ART" duration-ms="291">
     <groups>
     </groups>
-    <test started-at="2023-01-16T16:50:38 ART" name="Default test" finished-at="2023-01-16T16:50:38 ART" duration-ms="29">
+    <test started-at="2023-01-16T17:30:39 ART" name="Default test" finished-at="2023-01-16T17:30:40 ART" duration-ms="291">
       <class name="Edit.SauceDemo.Asignacion6">
-        <test-method is-config="true" signature="abrirNavegador()[pri:0, instance:Edit.SauceDemo.Asignacion6@54c5a2ff]" started-at="2023-01-16T16:50:34 ART" name="abrirNavegador" finished-at="2023-01-16T16:50:38 ART" duration-ms="3366" status="PASS">
+        <test-method is-config="true" signature="abrirNavegador()[pri:0, instance:Edit.SauceDemo.Asignacion6@53fe15ff]" started-at="2023-01-16T17:30:36 ART" name="abrirNavegador" finished-at="2023-01-16T17:30:39 ART" duration-ms="3866" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirNavegador -->
-        <test-method signature="logearse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Edit.SauceDemo.Asignacion6@54c5a2ff]" started-at="2023-01-16T16:50:38 ART" name="logearse" description="Login" finished-at="2023-01-16T16:50:38 ART" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
+        <test-method signature="logearse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Edit.SauceDemo.Asignacion6@53fe15ff]" started-at="2023-01-16T17:30:39 ART" name="logearse" data-provider="Datos Login" finished-at="2023-01-16T17:30:40 ART" duration-ms="266" status="FAIL">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
             <message>
               <![CDATA[
-Cannot inject @Test annotated Method [logearse] with [class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection]]>
+[public void Edit.SauceDemo.Asignacion6.logearse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException,java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: logearse([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4])
+Arguments: [(java.lang.String) andrianijavier1@gmail.com,(java.lang.String) 23wr32rw]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Cannot inject @Test annotated Method [logearse] with [class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
-at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void Edit.SauceDemo.Asignacion6.logearse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException,java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: logearse([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4])
+Arguments: [(java.lang.String) andrianijavier1@gmail.com,(java.lang.String) 23wr32rw]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:909)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:37)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -51,29 +51,29 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logearse -->
-        <test-method is-config="true" signature="cerraNavegador()[pri:0, instance:Edit.SauceDemo.Asignacion6@54c5a2ff]" started-at="2023-01-16T16:50:38 ART" name="cerraNavegador" finished-at="2023-01-16T16:50:54 ART" duration-ms="16321" status="FAIL">
+        <test-method is-config="true" signature="cerraNavegador()[pri:0, instance:Edit.SauceDemo.Asignacion6@53fe15ff]" started-at="2023-01-16T17:30:40 ART" name="cerraNavegador" finished-at="2023-01-16T17:30:40 ART" duration-ms="261" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[invalid session id
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3222ad0604337129fb75ad3183eb8001, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\JAVIER~1.AND\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49945}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49945/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3222ad0604337129fb75ad3183eb8001]]>
+Command: [5e68f04c48bd94e9a30118e7094a04ed, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\JAVIER~1.AND\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51842}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51842/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5e68f04c48bd94e9a30118e7094a04ed]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.7.2', revision: '4d4020c3b7'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3222ad0604337129fb75ad3183eb8001, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\JAVIER~1.AND\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49945}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49945/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3222ad0604337129fb75ad3183eb8001
+Command: [5e68f04c48bd94e9a30118e7094a04ed, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\JAVIER~1.AND\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51842}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51842/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5e68f04c48bd94e9a30118e7094a04ed
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)

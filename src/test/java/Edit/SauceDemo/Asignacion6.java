@@ -20,7 +20,7 @@ public class Asignacion6 {
 	String url = "https://www.saucedemo.com/";
 	WebDriver driver;
 	String rutaEvidencia = "..\\SauceDemo\\Evidencias\\";
-	String nombreDocumento = "Evidencia SauceDemo.com";
+	String nombreDocumento = "Evidencia SauceDemo.docx";
 	
 	@BeforeSuite 
 	public void abrirNavegador() throws InvalidFormatException, IOException, InterruptedException {
@@ -32,7 +32,7 @@ public class Asignacion6 {
 		CapturaEvidencia.escribirTituloEnDocumento(rutaEvidencia + nombreDocumento, "Probando el Login con multiples Users" , 20);
 	}
 	
-	@Test(description= "Login")
+	@Test(dataProvider="Datos Login")
 	public void logearse(String email, String password, String nombre, String apellido, String CP) throws InvalidFormatException, IOException, InterruptedException {
 		driver.findElement(By.id("user-name")).sendKeys(email);
 		driver.findElement(By.id("password")).sendKeys(password);
@@ -71,7 +71,7 @@ public class Asignacion6 {
 				"Hoja1");
 	}
 	
-	@DataProvider(name="Datos Login")
+	@DataProvider(name="Datos Formulario")
 	public Object[][] leerDatosPersonales() throws Exception {
 		return DatosExcel.leerExcel(
 				"..\\SauceDemo\\Datos\\Datos_Login.xlsx", 

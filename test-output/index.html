@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\javier.andriani\AppData\Local\Temp\testng-eclipse-1864442642\testng-customsuite.xml</span>
+                    <span>C:\Users\javier.andriani\AppData\Local\Temp\testng-eclipse-1230593161\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,17 +129,15 @@
                   <a name="logearse">
                   </a> <!-- logearse -->
                   <span class="method-name">logearse</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Cannot inject @Test annotated Method [logearse] with [class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String, class java.lang.String].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:436)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:350)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:693)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:879)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:728)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:72)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:51)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:924)
+                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
+[public void Edit.SauceDemo.Asignacion6.logearse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException,java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: logearse([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4])
+Arguments: [(java.lang.String) andrianijavier1@gmail.com,(java.lang.String) 23wr32rw]
+	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+	at org.testng.internal.Parameters.injectParameters(Parameters.java:909)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:37)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -161,8 +159,6 @@ For more information on native dependency injection please refer to https://test
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 
 </div> <!-- stack-trace -->
-                  <em>
-(Login)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -170,7 +166,7 @@ For more information on native dependency injection please refer to https://test
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\javier.andriani\AppData\Local\Temp\testng-eclipse-1864442642\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\javier.andriani\AppData\Local\Temp\testng-eclipse-1230593161\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -223,12 +219,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'logearse')
 data.setCell(0, 2, 'Edit.SauceDemo.Asignacion6')
-data.setCell(0, 3, 0);
+data.setCell(0, 3, 266);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 266 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -263,7 +259,7 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">cerraNavegador</span>
-                <span class="method-start">3429 ms</span>
+                <span class="method-start">4216 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
