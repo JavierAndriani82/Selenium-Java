@@ -1,122 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-16T17:30:39 ART" name="Default suite" finished-at="2023-01-16T17:30:40 ART" duration-ms="291">
+  <suite started-at="2023-01-19T12:28:29 ART" name="Suite" finished-at="2023-01-19T12:28:50 ART" duration-ms="20510">
     <groups>
     </groups>
-    <test started-at="2023-01-16T17:30:39 ART" name="Default test" finished-at="2023-01-16T17:30:40 ART" duration-ms="291">
-      <class name="Edit.SauceDemo.Asignacion6">
-        <test-method is-config="true" signature="abrirNavegador()[pri:0, instance:Edit.SauceDemo.Asignacion6@53fe15ff]" started-at="2023-01-16T17:30:36 ART" name="abrirNavegador" finished-at="2023-01-16T17:30:39 ART" duration-ms="3866" status="PASS">
+    <test started-at="2023-01-19T12:28:29 ART" name="Test" finished-at="2023-01-19T12:28:50 ART" duration-ms="20510">
+      <class name="Edit.SauceDemo.AppTest">
+        <test-method signature="shouldAnswerWithTrue()[pri:0, instance:Edit.SauceDemo.AppTest@4f80542f]" started-at="2023-01-19T12:28:31 ART" name="shouldAnswerWithTrue" finished-at="2023-01-19T12:28:31 ART" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldAnswerWithTrue -->
+      </class> <!-- Edit.SauceDemo.AppTest -->
+      <class name="Edit.SauceDemo.Asignacion2">
+        <test-method signature="hacerBusquedaEnChrome()[pri:0, instance:Edit.SauceDemo.Asignacion2@6bd61f98]" started-at="2023-01-19T12:28:29 ART" name="hacerBusquedaEnChrome" finished-at="2023-01-19T12:28:31 ART" duration-ms="1459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hacerBusquedaEnChrome -->
+      </class> <!-- Edit.SauceDemo.Asignacion2 -->
+      <class name="Edit.SauceDemo.Asignacion4">
+        <test-method is-config="true" signature="abrirNavegador()[pri:0, instance:Edit.SauceDemo.Asignacion4@d86a6f]" started-at="2023-01-19T12:28:21 ART" name="abrirNavegador" finished-at="2023-01-19T12:28:29 ART" duration-ms="8291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- abrirNavegador -->
-        <test-method signature="logearse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Edit.SauceDemo.Asignacion6@53fe15ff]" started-at="2023-01-16T17:30:39 ART" name="logearse" data-provider="Datos Login" finished-at="2023-01-16T17:30:40 ART" duration-ms="266" status="FAIL">
-          <exception class="org.testng.internal.reflect.MethodMatcherException">
-            <message>
-              <![CDATA[
-[public void Edit.SauceDemo.Asignacion6.logearse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException,java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: logearse([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4])
-Arguments: [(java.lang.String) andrianijavier1@gmail.com,(java.lang.String) 23wr32rw]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
-[public void Edit.SauceDemo.Asignacion6.logearse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException,java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: logearse([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4])
-Arguments: [(java.lang.String) andrianijavier1@gmail.com,(java.lang.String) 23wr32rw]
-at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
-at org.testng.internal.Parameters.injectParameters(Parameters.java:909)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:37)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+        <test-method signature="crearUsuario()[pri:0, instance:Edit.SauceDemo.Asignacion4@d86a6f]" started-at="2023-01-19T12:28:31 ART" name="crearUsuario" description="Click en Sign In y Create an Account" finished-at="2023-01-19T12:28:50 ART" duration-ms="18982" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logearse -->
-        <test-method is-config="true" signature="cerraNavegador()[pri:0, instance:Edit.SauceDemo.Asignacion6@53fe15ff]" started-at="2023-01-16T17:30:40 ART" name="cerraNavegador" finished-at="2023-01-16T17:30:40 ART" duration-ms="261" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5e68f04c48bd94e9a30118e7094a04ed, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\JAVIER~1.AND\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51842}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51842/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5e68f04c48bd94e9a30118e7094a04ed]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.5'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5e68f04c48bd94e9a30118e7094a04ed, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\JAVIER~1.AND\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51842}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51842/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5e68f04c48bd94e9a30118e7094a04ed
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:590)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:594)
-at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:317)
-at Utilities.CapturaEvidencia.capturarPantallaEnDocumento(CapturaEvidencia.java:23)
-at Edit.SauceDemo.Asignacion6.cerraNavegador(Asignacion6.java:84)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:404)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cerraNavegador -->
-      </class> <!-- Edit.SauceDemo.Asignacion6 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- crearUsuario -->
+      </class> <!-- Edit.SauceDemo.Asignacion4 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

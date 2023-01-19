@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 16 17:30:39 ART 2023</td>
+<td>Started on:</td><td>Thu Jan 19 12:03:14 ART 2023</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (291 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8780 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,67 +76,40 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Edit.SauceDemo.Asignacion6.logearse()'><b>logearse</b><br>Test class: Edit.SauceDemo.Asignacion6</td>
-<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
-[public void Edit.SauceDemo.Asignacion6.logearse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException,java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: logearse([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4])
-Arguments: [(java.lang.String) andrianijavier1@gmail.com,(java.lang.String) 23wr32rw]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
-	at org.testng.internal.Parameters.injectParameters(Parameters.java:909)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:37)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2036302615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2036302615'><pre>org.testng.internal.reflect.MethodMatcherException: 
-[public void Edit.SauceDemo.Asignacion6.logearse(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) throws org.apache.poi.openxml4j.exceptions.InvalidFormatException,java.io.IOException,java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: logearse([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2, java.lang.String arg3, java.lang.String arg4])
-Arguments: [(java.lang.String) andrianijavier1@gmail.com,(java.lang.String) 23wr32rw]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
-	at org.testng.internal.Parameters.injectParameters(Parameters.java:909)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:37)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<td title='Edit.SauceDemo.asignacionClase7.compraCarrito()'><b>compraCarrito</b><br>Test class: Edit.SauceDemo.asignacionClase7<br>Test method: Compra de carrito<br>Parameters: Javier, Andriani, 1842</td>
+<td></td>
+<td>7</td>
+<td>Edit.SauceDemo.asignacionClase7@6d4d66d2</td></tr>
+<tr>
+<td title='Edit.SauceDemo.asignacionClase7.logIn()'><b>logIn</b><br>Test class: Edit.SauceDemo.asignacionClase7<br>Test method: LogIn en SauceDemo<br>Parameters: sara, secret_sauce</td>
+<td></td>
 <td>0</td>
-<td>Edit.SauceDemo.Asignacion6@53fe15ff</td></tr>
+<td>Edit.SauceDemo.asignacionClase7@6d4d66d2</td></tr>
+<tr>
+<td title='Edit.SauceDemo.asignacionClase7.logIn()'><b>logIn</b><br>Test class: Edit.SauceDemo.asignacionClase7<br>Test method: LogIn en SauceDemo<br>Parameters: pancho, secret_sauce</td>
+<td></td>
+<td>0</td>
+<td>Edit.SauceDemo.asignacionClase7@6d4d66d2</td></tr>
+<tr>
+<td title='Edit.SauceDemo.asignacionClase7.logIn()'><b>logIn</b><br>Test class: Edit.SauceDemo.asignacionClase7<br>Test method: LogIn en SauceDemo<br>Parameters: luis, secret_sauce</td>
+<td></td>
+<td>0</td>
+<td>Edit.SauceDemo.asignacionClase7@6d4d66d2</td></tr>
+<tr>
+<td title='Edit.SauceDemo.asignacionClase7.logIn()'><b>logIn</b><br>Test class: Edit.SauceDemo.asignacionClase7<br>Test method: LogIn en SauceDemo<br>Parameters: standard_user, secret_sauce</td>
+<td></td>
+<td>0</td>
+<td>Edit.SauceDemo.asignacionClase7@6d4d66d2</td></tr>
+<tr>
+<td title='Edit.SauceDemo.asignacionClase7.logIn()'><b>logIn</b><br>Test class: Edit.SauceDemo.asignacionClase7<br>Test method: LogIn en SauceDemo<br>Parameters: pedro, secret_sauce</td>
+<td></td>
+<td>0</td>
+<td>Edit.SauceDemo.asignacionClase7@6d4d66d2</td></tr>
+<tr>
+<td title='Edit.SauceDemo.asignacionClase7.logIn()'><b>logIn</b><br>Test class: Edit.SauceDemo.asignacionClase7<br>Test method: LogIn en SauceDemo<br>Parameters: javi, secret_sauce</td>
+<td></td>
+<td>0</td>
+<td>Edit.SauceDemo.asignacionClase7@6d4d66d2</td></tr>
 </table><p>
 </body>
 </html>
